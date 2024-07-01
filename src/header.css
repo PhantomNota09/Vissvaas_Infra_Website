@@ -1,0 +1,109 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.company-logo {
+    height: 35px;
+    width: 125px;
+    margin-left: 10px;
+    cursor: pointer; /* Change the cursor to indicate a clickable item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .company-logo:hover {
+        transform: scale(1.05); /* Slightly enlarge the logo on hover */
+    }
+
+.nav-container {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: calc(-125px - 35px); /* Adjust this value based on the actual width of the logo */
+}
+
+nav {
+    margin-left: 40px;
+}
+
+    nav ul {
+        list-style: none;
+        margin: 0 auto; /* Center the ul element within the nav-container */
+        padding: 0;
+        display: flex;
+        gap: 40px;
+    }
+
+        nav ul li {
+            position: relative; /* Ensure dropdown content is positioned relative to its parent */
+        }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.2rem;
+                transition: color 0.3s;
+            }
+
+                nav ul li a:hover {
+                    color: #ffd700;
+                }
+
+/* Dropdown styles */
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+.logo-link {
+    position: relative;
+    overflow: hidden;
+}
+
+    .logo-link::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.6s, opacity 0.6s;
+        opacity: 0;
+    }
+
+    .logo-link:active::after {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+        transition: 0s;
+    }

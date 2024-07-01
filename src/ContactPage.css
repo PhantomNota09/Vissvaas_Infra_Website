@@ -1,0 +1,113 @@
+@import './header.css';
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact-page {
+    width: 100%;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    color: #ddd;
+}
+
+    footer p {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 10px;
+    }
+
+        .contact-form h1 {
+            font-size: 2rem;
+        }
+
+        .contact-form label, .contact-form input, .contact-form textarea {
+            font-size: 1rem;
+        }
+}
+
+main {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    flex: 1;
+}
+
+.contact-form-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+    .contact-form-container h2 {
+        margin-bottom: 20px;
+    }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+    .contact-form label {
+        margin-bottom: 10px;
+        color: #ffd700;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"],
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .contact-form textarea {
+        height: 100px;
+    }
+
+    .contact-form button {
+        background-color: #ffd700;
+        color: #333;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .contact-form button:hover {
+            background-color: #ffdb4d;
+        }
