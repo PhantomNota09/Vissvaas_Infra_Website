@@ -68,7 +68,7 @@ const ProjectPage = () => {
                 <div className="contact-info">
                     <p>Address: Vaishnavi Complex, Street No. 06, Habsiguda Main Road, Habsiguda, Hyderabad, Telangana, INDIA.</p>
                     <p>Phone: <a href="tel:+918885555555">888-555-5555</a></p>
-                    <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vissvaas122@gmail.com" target="_blank">vissvaas122@gmail.com</a></p>
+                    <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vissvaas122@gmail.com" target="_blank" rel="noreferrer">vissvaas122@gmail.com</a></p>
                 </div>
             </footer>
         </div>
