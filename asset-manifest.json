@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Vissvaas_Infra_Website/static/css/main.16e76f82.css",
+    "main.js": "/Vissvaas_Infra_Website/static/js/main.035f7684.js",
+    "static/media/Kuberaa prides.pdf": "/Vissvaas_Infra_Website/static/media/Kuberaa prides.158bd7a5a11ae42a15e7.pdf",
+    "static/media/Kuberaa-logo.png": "/Vissvaas_Infra_Website/static/media/Kuberaa-logo.1d891e58cf9287a31dd5.png",
+    "static/media/shanmuka prides middle page.jpg": "/Vissvaas_Infra_Website/static/media/shanmuka prides middle page.580d59e8e8f90b0417c0.jpg",
+    "static/media/shanmuka prides.pdf": "/Vissvaas_Infra_Website/static/media/shanmuka prides.af0a056a8c746194ab0c.pdf",
+    "static/media/Kuberaa prides second page.jpg": "/Vissvaas_Infra_Website/static/media/Kuberaa prides second page.a253d4a941dfca73665b.jpg",
+    "static/media/shanmuka prides first page.jpg": "/Vissvaas_Infra_Website/static/media/shanmuka prides first page.8deef53d25725428a348.jpg",
+    "static/media/shanmuka prides last page.jpg": "/Vissvaas_Infra_Website/static/media/shanmuka prides last page.b994acecafa3a945eae6.jpg",
+    "static/media/Kuberaa prides first page.jpg": "/Vissvaas_Infra_Website/static/media/Kuberaa prides first page.3139b52ec559f775fe2b.jpg",
+    "static/media/Kuberaa prides third page.jpg": "/Vissvaas_Infra_Website/static/media/Kuberaa prides third page.e1692ee920c8ce917692.jpg",
+    "static/media/shanmuka-logo.png": "/Vissvaas_Infra_Website/static/media/shanmuka-logo.ffdceb75ae6e88ed3dd4.png",
+    "static/media/company-logo.png": "/Vissvaas_Infra_Website/static/media/company-logo.61d20cb9592986a50ca2.png",
+    "index.html": "/Vissvaas_Infra_Website/index.html",
+    "main.16e76f82.css.map": "/Vissvaas_Infra_Website/static/css/main.16e76f82.css.map",
+    "main.035f7684.js.map": "/Vissvaas_Infra_Website/static/js/main.035f7684.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16e76f82.css",
+    "static/js/main.035f7684.js"
+  ]
+}
