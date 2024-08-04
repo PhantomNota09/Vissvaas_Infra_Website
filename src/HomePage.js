@@ -11,16 +11,14 @@ const HomePage = () => {
     const [prevIndex, setPrevIndex] = useState(0);
     const images = [
         'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg',
-        'https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg',
-        'https://images.pexels.com/photos/4215110/pexels-photo-4215110.jpeg',
-        'https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg'
+         'https://images.pexels.com/photos/4215110/pexels-photo-4215110.jpeg',
     ];
 
     useEffect(() => {
         const interval = setInterval(() => {
             setPrevIndex(currentIndex);
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 5000);
+        }, 10000);
 
         return () => clearInterval(interval);
     }, [currentIndex, images.length]);
@@ -39,6 +37,8 @@ const HomePage = () => {
                                 <Link to="/projects" className="dropbtn">Projects</Link>
                                 <div className="dropdown-content">
                                     <Link to="/projects/shanmukaa-prides">Shanmukaa Prides</Link>
+                                    <Link to="/projects/kuberaa-prides">Kuberaa Prides</Link>
+
                                     {/* Add more project links here */}
                                 </div>
                             </li>
@@ -59,9 +59,23 @@ const HomePage = () => {
                 </section>
                 <section className="company-info">
                     <h1>About Vissvaas Infraa</h1>
-                    <p>Vissvaas Infraa is a leading player in Hyderabad's real estate industry. We help many people to make their dreams of owning a home come true. We build each home with painstaking attention to quality, useful detailing, and ensure value for money. We desire to earn people's trust and confidence whenever we launch our new products and services.</p>
+                    <p>Vissvaas Infraa is a significant player in Hyderabad's real estate sector, known for its commitment to excellence and precision. We focus on creating value-driven residential spaces, helping families realize their dream of owning a home.</p>
+
+                    <div className="vision-mission">
+                        <div>
+                            <h2>Vision</h2>
+                            <p>To become a trusted name in the real estate industry by consistently delivering superior quality projects that exceed customer expectations.</p>
+                        </div>
+                        <div>
+                            <h2>Mission</h2>
+                            <p>To build homes with meticulous attention to detail, ensuring each project offers exceptional value and lasting satisfaction to customers.</p>
+                        </div>
+                    </div>
+
                     <p><strong>Office Address:</strong> Vaishnavi Complex, Street No. 06, Habsiguda Main Road, Habsiguda, Hyderabad, Telangana, INDIA.</p>
                 </section>
+
+
                 <section className="directors-info">
                     <div className="director">
                         <img src={managingDirector} alt="Managing Director" />
@@ -91,6 +105,11 @@ const HomePage = () => {
             </main>
             <footer>
                 <p>&copy; 2024 Vissvaas Infraa PVT LTD. All rights reserved.</p>
+                <div className="contact-info">
+                    <p>Address: Vaishnavi Complex, Street No. 06, Habsiguda Main Road, Habsiguda, Hyderabad, Telangana, INDIA.</p>
+                    <p>Phone: <a href="tel:+918885555555">888-555-5555</a></p>
+                    <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vissvaas122@gmail.com" target="_blank">vissvaas122@gmail.com</a></p>
+                </div>
             </footer>
         </div>
     );

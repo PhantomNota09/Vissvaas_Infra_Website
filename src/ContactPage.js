@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './images/company-logo.png';
-import './ContactPage.css'; 
+import './ContactPage.css';
 import './header.css';
 
 const ContactPage = () => {
@@ -19,6 +19,8 @@ const ContactPage = () => {
                                 <Link to="/projects" className="dropbtn">Projects</Link>
                                 <div className="dropdown-content">
                                     <Link to="/projects/shanmukaa-prides">Shanmukaa Prides</Link>
+                                    <Link to="/projects/kuberaa-prides">Kuberaa Prides</Link>
+
                                     {/* Add more project links here */}
                                 </div>
                             </li>
@@ -32,30 +34,38 @@ const ContactPage = () => {
                 <div className="contact-form-container">
                     <h2>Contact Us</h2>
                     <form action="#" className="contact-form">
-                        <label htmlFor="name">Name:</label>
-                        <input type="text" id="name" name="name" required />
+                        <div className="form-group">
+                            <label htmlFor="name">Name:</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
 
-                        <label htmlFor="email">Email:</label>
-                        <input type="email" id="email" name="email" required />
+                        <div className="form-group">
+                            <label htmlFor="email">Email:</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
 
-                        <label htmlFor="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone" maxLength="12" />
+                        <div className="form-group">
+                            <label htmlFor="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" maxLength="12" />
+                        </div>
 
-                        <label htmlFor="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <div className="form-group">
+                            <label htmlFor="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
 
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-
-                <div className="contact-info">
-                    <h2>Contact Information</h2>
-                    <p><span className="info-label">Address:</span> Vaishnavi Complex, Street No. 06, Habsiguda Main Road, Habsiguda, Hyderabad, Telangana, INDIA.</p>
-                    <p><span className="info-label">Phone:</span> 888-555-5555</p>
-                </div>
             </main>
+
             <footer>
-                <p>&copy; 2024 Vissvaas Infra PVT LTD. All rights reserved.</p>
+                <p>&copy; 2024 Vissvaas Infraa PVT LTD. All rights reserved.</p>
+                <div className="contact-info">
+                    <p>Address: Vaishnavi Complex, Street No. 06, Habsiguda Main Road, Habsiguda, Hyderabad, Telangana, INDIA.</p>
+                    <p>Phone: <a href="tel:+918885555555">888-555-5555</a></p>
+                    <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vissvaas122@gmail.com" target="_blank">vissvaas122@gmail.com</a></p>
+                </div>
             </footer>
         </div>
     );

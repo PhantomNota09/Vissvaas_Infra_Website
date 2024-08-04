@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     color: #333;
-    background-color: #f4f4f9;
+    background-color: #ffffff;
     overflow-x: hidden;
 }
 
@@ -26,11 +26,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .hero-section {
-    margin: -22px 0px;
-    padding-top: 8px;
+    margin: 30px 0px;
+    padding-top: 10px;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -39,6 +40,9 @@ main {
     align-items: center;
     color: #fff;
     overflow: hidden;
+    max-width: 1500px;
+    max-height: 675px;
+    border-radius: 10px;
 }
 
     .hero-section .background-layer {
@@ -47,11 +51,13 @@ main {
         left: 0;
         width: 100%;
         height: 100%;
-        background-size: cover;
+        background-size: cover; /* Change to contain for no zooming */
         background-position: center;
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+
         transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
         z-index: -1;
-        filter: blur(4px); /* Adjust the blur radius as needed */
+        filter: blur(2px); /* Adjust the blur radius as needed */
     }
 
         .hero-section .background-layer.previous {
@@ -64,8 +70,6 @@ main {
 
     .hero-content {
         z-index: 1; /* Ensure content is above background layers */
-        background: rgba(0, 0, 0, 0.5);
-        padding: 60px;
         border-radius: 15px;
     }
 
@@ -82,26 +86,73 @@ main {
 }
 
 .company-info {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 1000px;
-    padding-top: 20px;
-    margin: 40px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 40px; 
+    color: #333;
+    max-width: 1100px;
+    line-height: 1.6;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding-bottom: 30px;
+    padding-top: 0;
 }
 
     .company-info h1 {
         font-size: 2.5rem;
         margin-bottom: 20px;
-        color: #333;
+        color: #000;
+        text-align: center;
+    }
+
+    .company-info h2 {
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #444;
     }
 
     .company-info p {
-        font-size: 1.5rem;
-        line-height: 1.6;
-        color: #555;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
     }
+
+    .company-info ul {
+        list-style-type: none;
+        padding: 0;
+        padding-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    .company-info li {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+.vision-mission {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+    .vision-mission div {
+        flex: 1;
+        min-width: 300px;
+        margin: 10px;
+    }
+
+@media (max-width: 768px) {
+    .company-info {
+        padding: 20px;
+    }
+
+    .vision-mission {
+        flex-direction: column;
+    }
+
+        .vision-mission div {
+            margin: 10px 0;
+        }
+}
+
 
 .directors-info {
     display: flex;
@@ -148,6 +199,7 @@ main {
     margin-top: 30px;
     width: 75%;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 
 .stat-item {
@@ -174,7 +226,7 @@ main {
 footer {
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
     color: #ddd;
     position: relative;
@@ -185,6 +237,25 @@ footer {
         font-size: 0.9rem;
         margin: 0;
     }
+
+    footer .contact-info {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+
+        footer .contact-info p {
+            margin: 5px 0;
+        }
+
+        footer .contact-info a {
+            color: #ddd; 
+            text-decoration: none; 
+        }
+
+            footer .contact-info a:hover {
+                text-decoration: underline; 
+            }
+
 
 @media (max-width: 768px) {
     .company-info, .company-stats {
