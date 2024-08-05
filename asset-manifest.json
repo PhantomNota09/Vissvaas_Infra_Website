@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Vissvaas_Infra_Website/static/css/main.71b9abdf.css",
-    "main.js": "/Vissvaas_Infra_Website/static/js/main.2949a045.js",
+    "main.js": "/Vissvaas_Infra_Website/static/js/main.fa61fa51.js",
     "static/media/Kuberaa prides.pdf": "/Vissvaas_Infra_Website/static/media/Kuberaa prides.158bd7a5a11ae42a15e7.pdf",
     "static/media/Kuberaa-logo.png": "/Vissvaas_Infra_Website/static/media/Kuberaa-logo.1d891e58cf9287a31dd5.png",
     "static/media/shanmuka prides middle page.jpg": "/Vissvaas_Infra_Website/static/media/shanmuka prides middle page.580d59e8e8f90b0417c0.jpg",
@@ -15,10 +15,10 @@
     "static/media/company-logo.png": "/Vissvaas_Infra_Website/static/media/company-logo.61d20cb9592986a50ca2.png",
     "index.html": "/Vissvaas_Infra_Website/index.html",
     "main.71b9abdf.css.map": "/Vissvaas_Infra_Website/static/css/main.71b9abdf.css.map",
-    "main.2949a045.js.map": "/Vissvaas_Infra_Website/static/js/main.2949a045.js.map"
+    "main.fa61fa51.js.map": "/Vissvaas_Infra_Website/static/js/main.fa61fa51.js.map"
   },
   "entrypoints": [
     "static/css/main.71b9abdf.css",
-    "static/js/main.2949a045.js"
+    "static/js/main.fa61fa51.js"
   ]
 }
